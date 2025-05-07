@@ -1,14 +1,10 @@
 import java.util.ArrayList;
-
-
 public class ReviewAnalysis  {
 private Review[] allReviews;
-
 
 public ReviewAnalysis(Review[] reviews)  {  
     allReviews = reviews;
 }  
-
 
 public double getAverageRating()  {
     int len = allReviews.length;
@@ -21,8 +17,6 @@ public double getAverageRating()  {
  
 public ArrayList<String> collectComments()  {
     int len = allReviews.length;
-
-
     ArrayList<String> array = new ArrayList<String>();
     for (int i = 0; i < len; i++) {
         String comment = allReviews[i].getComment();
